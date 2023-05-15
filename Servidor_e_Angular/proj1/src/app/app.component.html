@@ -1,0 +1,20 @@
+
+<button (click)="Conectar()">Clique Aqui!</button>
+<p>Caixa onde cada letra pressionada faz um envio para o servidor</p>
+<p>ID</p>
+<input type="text" name="ID" #ID/>
+<p>Nome</p>
+<input type="text" #nome/>
+<p>Idade</p>
+<input type="text" name="idade" #idade/>
+<p>Profissão</p>
+<input type="text" #profissao/>
+<p>Salário</p>
+<input type="text" name="salario" #salario/>
+<button (click)="EnviarDados(ID.value, nome.value, idade.value,profissao.value, salario.value)">Salvar no banco!</button>
+
+<p>Caixa onde cada letra pressionada altera um campo do site/app</p>
+<input type="text" #caixa2 (keyup)="AlterarCampo(caixa2.value)"/>
+<button (click)="Clicando()">Alterar no clique!</button>
+<p>Campo a ser alterado: {{valor}}</p>
+
