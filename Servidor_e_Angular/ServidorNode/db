@@ -1,0 +1,4 @@
+SELECT cpf,
+       nome,
+       idade
+  FROM usuarios;
